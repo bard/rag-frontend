@@ -1,0 +1,14 @@
+.openapi-generator-ignore
+apis/DefaultApi.ts
+apis/index.ts
+index.ts
+models/HTTPValidationError.ts
+models/NoteContentType.ts
+models/NoteCreate.ts
+models/QueryResponse.ts
+models/TopicCreate.ts
+models/TopicResponse.ts
+models/ValidationError.ts
+models/ValidationErrorLocInner.ts
+models/index.ts
+runtime.ts
