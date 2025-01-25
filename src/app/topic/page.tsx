@@ -126,7 +126,11 @@ const QuestionSection: React.FC<{ topicId: string }> = ({ topicId }) => {
                       Sources:
                     </span>
 
-                    {askQuestionMutation.data.sources.length > 0 ? (
+                    <span className="text-[10px] text-muted-foreground bg-muted px-2 py-0.5 rounded">
+                      language model
+                    </span>
+
+                    {askQuestionMutation.data.sources.length &&
                       askQuestionMutation.data.sources.map((source, index) => (
                         <span
                           key={index}
@@ -134,12 +138,7 @@ const QuestionSection: React.FC<{ topicId: string }> = ({ topicId }) => {
                         >
                           {source}
                         </span>
-                      ))
-                    ) : (
-                      <span className="text-[10px] text-muted-foreground bg-muted px-2 py-0.5 rounded">
-                        language model
-                      </span>
-                    )}
+                      ))}
                   </div>
                 </div>
               </CardContent>
